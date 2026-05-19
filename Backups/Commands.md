@@ -1,4 +1,3 @@
-````markdown
 # Backup Lab Commands
 
 ## Overview
@@ -14,7 +13,7 @@ Sensitive information such as passwords, tokens, private keys, recovery keys, an
 ```bash
 sudo mkdir -p /backups/client01
 sudo mkdir -p /backups/client02
-````
+```
 
 ### Verify Backup Folders
 
@@ -419,12 +418,9 @@ Port: 22
 
 ## Notes
 
-* Do not include real passwords in commands committed to GitHub.
-* Use placeholders like `USERNAME`, `PASSWORD`, or `username@corp.local`.
-* The final working client backup method was SMB mounted on Linux, then copied with `rsync`.
-* `rsync` over SSH was tested but not used as the final method because Windows did not have `rsync` available on the remote side.
-* Windows Server Backup completed successfully.
-* Restore testing completed successfully.
-
-```
-```
+- Do not include real passwords in commands committed to GitHub.
+- Use placeholders like `USERNAME`, `PASSWORD`, or `username@corp.local`.
+- The final working client backup method was SMB mounted on Linux, then copied with `rsync`.
+- `rsync` over SSH was tested but not used as the final method because Windows did not have `rsync` available on the remote side.
+- Windows Server Backup completed successfully.
+- Restore testing completed successfully.
